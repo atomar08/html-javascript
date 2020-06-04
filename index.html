@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+   
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1 class="text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List</h1>
+        <form id="book-form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title"  onfocus="this.value=''" value="Enter title" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form-control">
+          </div>
+          <div class="col text-center">
+          <input type="submit"   value="Add Book" class="btn btn-primary ">
+          <input type="text"  onfocus="this.value=''" id="filterInput" onkeyup="myFunction()" placeholder="Search names... ">
+        </form>
+        <table class="table table-striped mt-5">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN#</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+ 
+  </body>
+</html>
